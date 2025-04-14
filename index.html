@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.I FARMACIA - Tu Farmacia Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="35" y="10" width="30" height="80" rx="5" ry="5" fill="#00a651" />
+                    <rect x="10" y="35" width="80" height="30" rx="5" ry="5" fill="#00a651" />
+                </svg>
+                S.I FARMACIA
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenido a S.I FARMACIA</h2>
+            <p>Tu salud y bienestar, a un clic de distancia.</p>
+            <a href="#" class="cta-button">Ver Productos</a>
+        </section>
+
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Product items will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <aside class="shopping-cart-sidebar" id="shopping-cart-sidebar">
+            <button class="close-cart-btn" id="close-cart-btn"><i class="fas fa-times"></i></button>
+            <h3>Tu Carrito</h3>
+            <div id="cart-items">
+                <p>Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-summary">
+                <strong>Total: <span id="cart-total">€0.00</span></strong>
+            </div>
+            <button class="checkout-button">Finalizar Compra</button>
+        </aside>
+        <div class="cart-overlay" id="cart-overlay"></div>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 S.I FARMACIA. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+        "imports": {}
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
